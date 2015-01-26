@@ -1,0 +1,68 @@
+<html>
+<head>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body>
+	<div class="col-md-6">
+	<form class="form-horizontal" style= "padding-top:50px" role="form" method="POST" enctype="multipart/form-data" id="eventRegister" name="eventRegister" action="../php/registerEvent.php">
+						<div class="form-group">
+							
+							<div class="col-sm-10 col-md-offset-2">
+								<input type="text" class="form-control" placeholder="Name" id="name" name="name">
+							</div>
+						</div>
+				
+						<div class="form-group">
+							
+							<div class="col-sm-10 col-md-offset-2">
+								<input type="text" class="form-control" placeholder="Email" id="email" name="email">
+							</div>
+						</div>
+				
+						<div class="form-group">
+							
+							<div class="col-sm-10 col-md-offset-2">
+								<input type="password" class="form-control" placeholder="Password" id="password" name="password">
+							</div>
+						</div>	
+				
+						<div class="form-group">
+							
+							<div class="col-sm-10 col-md-offset-2">
+								<input type="password" class="form-control" placeholder="Confirm Password" id="cpassword" name="cpassword">
+							</div>
+						</div>
+					
+						<div class="form-group">
+							
+							<div class="col-sm-10 col-md-offset-2">
+								<input type="text" class="form-control"  placeholder="Institution" id="colg" name="colg">
+							</div>
+						</div>
+			
+			   
+						<div class="form-group">
+							
+							<div class="col-sm-10 col-md-offset-2">
+								<input type="text" class="form-control" id="location" placeholder="Current Location" name="location">
+							</div>
+						</div>
+				
+						<div class="form-group">
+							
+							<div class="col-sm-10 col-md-offset-2">
+								<input type="text" class="form-control" id="phno" placeholder="Mobile Number" name="phno">
+							</div>
+						</div>
+				
+					
+			
+					<button type="submit" id="submitButton" class="btn btn-primary" >Register</button>
+
+	</form>	
+	</div>
+	<div class="col-md-6">
+		<div class="col-md-4"><iframe src=""></iframe></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confluence'15 Register</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+
+    <style>
+      body {
+      background:url('img/registeration.jpg') no-repeat fixed;
+      background-size:cover;
+      background-position: center;
+      }
+    </style>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="registration/validation.js"></script>
+<script type="text/javascript" src="registration/registerwithfb.js"></script>
+<script src="js/prefixfree.min.js"></script>
+<script>
+function newDoc() {
+    window.location.assign("registration/googleSignin.php")
+}
+</script>
+</head>
+
+<body>
+<div class="cd-secondary-nav">
+		<a href="#" class="cd-secondary-nav-trigger">Menu<span></span></a> 
+		<nav>
+			<ul>
+				<li>
+					<a href="./">
+						<b>Home</b>
+						<span></span>
+					</a>
+				</li>
+				<li>
+					<a href="events.html">
+						<b>Events</b>
+						<span></span>
+					</a>
+					
+				</li>
+				</li>
+				<li>
+					<a href="sponsor">
+						<b>Sponsors</b>
+						<span></span>
+					</a>
+				</li>
+				<li>
+					<a href="register.html">
+						<b>Registration</b>
+						<span></span>
+					</a>
+				</li>
+        <li>
+          <a href="contact.html">
+            <b>Contact Us</b>
+            <span></span>
+          </a>
+			</ul>
+		</nav>
+	</div>
+<div class="row">
+  <div class="col-md-4 col-md-offset-1">
+  <h2 align="center" style="color:#fff">Login</h2>
+  <form class="form-horizontal" style= "padding-top:50px" role="form" method="POST" enctype="multipart/form-data" action="php/loginCheck.php" name="login" >
+    <div class="form-group">
+              
+              <div class="col-sm-12">
+                <input type="text" class="form-control" placeholder="Email" id="username" name="username">
+              </div>
+            </div>
+        
+            <div class="form-group">
+              
+              <div class="col-sm-12">
+                <input type="password" class="form-control" placeholder="Password" id="pass" name="pass">
+              </div>
+            </div>
+            <button type="submit" id="submitButton" class="col-md-offset-9 col-md-3 btn btn-primary" >Login</button>
+      </form>
+      <h3 align="center" style="color:#fff">OR</h3>
+
+      <div class="col-md-offset-4">
+    <fb:login-button id ="fb_button" class="btn" show-faces="false" width="200" max-rows="1" scope="email,public_profile">Register with Facebook</fb:login-button></div>
+
+      <div class="col-md-offset-4" style="margin-top:10px;">
+        <button onclick="newDoc()" style="background:#ED5A48; margin-left:10px" class="btn btn-default">
+            Sign up with Google+
+        </button>
+      </div>
+  </div>
+
+  <div class="col-md-4 col-md-offset-2" >
+  <h2 align="center" style="color:#fff">Registeration Form</h2>
+  <form class="form-horizontal" style= "padding-top:50px" role="form" method="POST" enctype="multipart/form-data" name="reg" action="registration/code_exec.php" onsubmit="return validateForm()" >
+            <div class="form-group">
+              
+              <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Name" id="name" name="name">
+              </div>
+
+              <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Email" id="email" name="email">
+              </div>
+            </div>
+        
+           
+        
+            <div class="form-group">
+              
+              <div class="col-sm-6">
+                <input type="password" class="form-control" placeholder="Password" id="password" name="password">
+              </div>
+              <div class="col-sm-6">
+                <input type="password" class="form-control" placeholder="Confirm Password" id="cpassword" name="cpassword">
+                </div>
+            </div>  
+        
+            
+          
+            <div class="form-group">
+              
+              <div class="col-sm-12">
+                <input type="text" class="form-control"  placeholder="Institution" id="colg" name="colg">
+              </div>
+            </div>
+      
+         
+            <div class="form-group">
+              
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="location" placeholder="Current Location" name="location">
+              </div>
+            </div>
+        
+            <div class="form-group">
+              
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="phno" placeholder="Mobile Number" name="phno">
+              </div>
+            </div>
+        
+          
+      
+          <button type="submit" id="submitButton" class="btn btn-primary col-md-3 col-md-offset-9" >Register</button>
+
+  </form> 
+  </div>
+  </div>
+  <script type="text/javascript" src="js/googleanalytics.js"></script>
+</body>
+</html>

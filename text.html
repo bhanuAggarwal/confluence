@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Confluence</title>
+<link rel="stylesheet" type="text/css" href="css/style3.css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/prefixfree.min.js"></script>
+
+<script>
+function myfunction(){
+location.reload();
+}
+
+function start() {
+    $('#content').html(
+        '<div class="sp-globe"></div>'+
+            '<h2 class="frame-1">The best and the most</h2>'+
+
+            '<h2 class="frame-2">beautiful things of life</h2>'+
+
+            '<h2 class="frame-3">can never be seen or touched</h2>'+
+
+            '<h2 class="frame-4">they can only be felt through heart !!</h2>'+
+
+            
+
+            '<h2 class="frame-5"><span>so let your heart feel</span> <span>this Confluence </span><span>through a<br /> Spring of Emotions!</span> </h2>'+
+    
+           '<a class="sp-circle-link1" onclick="start()">Reload!</a>'
+        );
+}
+</script>
+</head>
+<body>
+
+  
+<div class="container">
+    <div class="header">
+        <div class="clr"></div>
+    </div>
+    <div class="sp-container">
+        <div class="sp-content" id="content">
+            <div class="sp-globe"></div>
+
+            <a class="sp-circle-link-start" onclick="start()">ClickMe!</a> 
+        </div>
+    </div>
+</div>
+</body>
+</html>

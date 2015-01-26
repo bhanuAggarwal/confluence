@@ -1,0 +1,6 @@
+Main file: index.php
+Facebook Registration: fb-button.php
+Google Registration: buttonGoogleplus.php
+
+
+NOTE: I am not including registering any particular event from a user. This feature will be add prior to every event not in the dashboard. Everything is fully tested, you are good to go for the intergation.
